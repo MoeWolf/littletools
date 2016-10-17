@@ -63,7 +63,7 @@ function turn() {
 }
 
 function pass() {
-	if(passDate.value == 'wentao666') {
+	if(passDate.value == '11223344') {
 		passDiv.style.visibility = 'hidden';
 		container.style.visibility = 'visible';
 	}
