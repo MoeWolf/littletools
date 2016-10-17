@@ -21,12 +21,17 @@
 	display: inline-block;
 }
 .passDiv {
-	width: 500px;
+	width: 700px;
 	margin: auto;
-	margin-top: 250px;
+	margin-top: 300px;
+}
+.passDiv input {
+	width: 400px;
+	height: 96px;
 }
 .passDiv button {
 	width: 200px;
+	height: 100px;
 	margin: auto;
 	display: inline-block;
 }
