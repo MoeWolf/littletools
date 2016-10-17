@@ -19,6 +19,8 @@ function detect() {
 function reset() {
 	myData.value = '';
 	subDate.value = '';
+	numArr = [];
+	letterArr = [];
 }
 
 
