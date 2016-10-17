@@ -6,7 +6,6 @@ var passDate = document.getElementsByClassName('pass')[0];
 var passDiv = document.getElementsByClassName('passDiv')[0];
 var container = document.getElementsByClassName('container')[0];
 
-
 function detect() {
 	var re = new RegExp('^[A-Z]+$');
 	if(re.test(myData.value)){
@@ -15,7 +14,6 @@ function detect() {
 	else{
 		subDate.value = '傻吊输入大写字母';
 	}
-	
 }
 
 function reset() {
@@ -59,6 +57,8 @@ function turn() {
 	}
 	console.log(letterArr);
 	var output = letterArr.toString();
+	output = output.replace(/,/g,'');
+	console.log(output);
 	subDate.value = output;
 }
 
@@ -69,5 +69,16 @@ function pass() {
 	}
 	else{
 		alert('密码不正确');
+	}
+}
+
+passDate.onkeydown = function(e) {
+	if(e.keyCode == 13) {
+		pass();
+	}
+}
+myData.onkeydown = function(e) {
+	if(e.keyCode == 13) {
+		detect();
 	}
 }
