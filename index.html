@@ -6,14 +6,18 @@
 	</head>
 	<link rel="stylesheet"  href="css/style.css" type="text/css"/>
 	<body>
-		<div class="container">
-			<p>输入：</p><input class="origin" type="text" placeholder="输入数据"/>
-			<button type="submit" onclick="">转换</button>
-			<p>结果：</p><input class="result" type="text" placeholder=""/>
+		<div class="passDiv" style="visibility: visible;">
+			<input class="pass" type="text" placeholder="输入密码"/>
+			<button type="submit" class='passButton' onclick="pass()">确认</button>
 		</div>
 		
-		
-		
+		<div class="container" style="visibility: hidden;">
+			<p>输入：</p><input class="origin" type="text" placeholder="输入数据"/>
+			<button type="submit" class='submit' onclick="detect()">转换</button>
+			<p>结果：</p><input class="result" type="text" placeholder=""/>
+			<button type="submit" class="reset" onclick="reset()">重置</button>
+		</div>
 		<script type="text/javascript" src="js/tool.js"></script>
+		<script type="text/javascript" src="js/query.js" ></script>
 	</body>
 </html>
